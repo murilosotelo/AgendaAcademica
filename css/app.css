@@ -1,0 +1,20 @@
+.navbar {
+	background-color: #009688;
+	border-color: #009688;
+	border-radius: 0px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #373435;
+}
+.navbar-nav {
+	margin-top: 58px;
+}
+.navbar-toggle{
+	margin-top: 58px;
+}
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+.negrito {
+	font-weight: bold;
+}
