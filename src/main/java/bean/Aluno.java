@@ -1,7 +1,13 @@
 package bean;
 
-public class Aluno {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Aluno {
+	
+	
+	@Id
 	private Integer id;
 	private String nome;
 	private String usuario;

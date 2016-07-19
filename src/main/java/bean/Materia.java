@@ -1,11 +1,24 @@
 package bean;
 
-public class Materia {
+import javax.persistence.Entity;
 
+
+
+@Entity
+public class Materia {
+	
+	
+	private Integer id;
 	private String nome;
 	private Integer cargaHoraria;
 	private Integer quantidadeAvaliacoes;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getNome() {
 		return nome;
 	}
