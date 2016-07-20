@@ -30,8 +30,8 @@ public class AlunoInsertServlet extends HttpServlet {
 		aluno.setUsuario(usuario);
 		aluno.setSenha(senha);
 		
-		teste tc = new teste();
-		tc.insert(aluno);
+		AlunoControler ac = new AlunoControler();
+		ac.insert(aluno);
 		
 
 		response.sendRedirect("MateriaSelectServlet");
