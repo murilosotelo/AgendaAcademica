@@ -7,7 +7,7 @@
 <link href="css/min.css" rel="stylesheet">
 <style>
 label {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 </style>
 <title>Cadastro Disciplina</title>
@@ -34,73 +34,76 @@ label {
 	</div>
 	</nav>
 
-	div class="row">
-	<div class="col-md-4"></div>
-	<div class="col-md-4">
-		<h1 style="text-align: center; margin-top: 150px">Cadastro de
-			Disciplina</h1>
-		<div class="col-md-2"></div>
-		<div class="col-md-2">
-			<div class="formulario">
-				<form class="form-horizontal"
-					action="/AgendaAcademica/MateriaInsertServlet" method="post">
-					<div class="control-group" style="margin: center">
-						<label class="control-label" display="inline-block">Nome da Disciplina</label>
-						<div class="controls">
-							<input id="nome_materia" name="nome_materia" type="text"
-								placeholder="Digite o nome da disciplina" class="form-control"
-								style="width: 250px;" />
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<h1 style="text-align: center; margin-top: 150px">Cadastro de
+				Disciplina</h1>
+			<div class="col-md-2"></div>
+			<div class="col-md-2">
+				<div class="formulario">
+					<form class="form-horizontal"
+						action="/AgendaAcademica/MateriaInsertServlet" method="post">
+						<div class="control-group" style="margin: center">
+							<label class="control-label" display="inline-block">Nome
+								da Disciplina</label>
+							<div class="controls">
+								<input id="nome_materia" name="nome_materia" type="text"
+									placeholder="Digite o nome da disciplina" class="form-control"
+									style="width: 250px;" />
+							</div>
 						</div>
-					</div>
-					<div class="control-group"
-						style="margin-top: 10px; margin: center;">
-						<label class="control-label">Carga Horária</label>
-						<div class="controls">
-							<input id="carga_horaria" name="carga_horaria" type="text"
-								placeholder="Digite a carga horária da disciplina"
-								class="form-control" style="width: 250px;" />
+						<div class="control-group"
+							style="margin-top: 10px; margin: center;">
+							<label class="control-label">Carga Horária</label>
+							<div class="controls">
+								<input id="carga_horaria" name="carga_horaria" type="text"
+									placeholder="Digite a carga horária da disciplina"
+									class="form-control" style="width: 250px;" />
+							</div>
 						</div>
-					</div>
-					<div class="control-group"
-						style="margin-top: 10px; margin: center;">
-						<label class="control-label">Nota Avaliação 1</label>
-						<div class="controls">
-							<input id="avaliacaoP1" name="avaliacaoP1" type="text"
-								class="form-control" style="width: 250px;" />
+						<div class="control-group"
+							style="margin-top: 10px; margin: center;">
+							<label class="control-label">Nota Avaliação 1</label>
+							<div class="controls">
+								<input id="avaliacaoP1" name="avaliacaoP1" type="text"
+									class="form-control" style="width: 250px;" />
+							</div>
 						</div>
-					</div>
-					<div class="control-group"
-						style="margin-top: 10px; margin: center;">
-						<label class="control-label">Nota Avaliação 2</label>
-						<div class="controls">
-							<input id="avaliacaoP2" name="avaliacaoP2" type="text"
-								placeholder="" class="form-control" style="width: 250px;" />
+						<div class="control-group"
+							style="margin-top: 10px; margin: center;">
+							<label class="control-label">Nota Avaliação 2</label>
+							<div class="controls">
+								<input id="avaliacaoP2" name="avaliacaoP2" type="text"
+									placeholder="" class="form-control" style="width: 250px;" />
+							</div>
 						</div>
-					</div>
-					<div class="control-group"
-						style="margin-top: 10px; margin: center;">
-						<label class="control-label">Nota Avaliação 3</label>
-						<div class="controls">
-							<input id="avaliacaoP3" name="avaliacaoP3" type="text"
-								placeholder="" class="form-control" style="width: 250px;" />
+						<div class="control-group"
+							style="margin-top: 10px; margin: center;">
+							<label class="control-label">Nota Avaliação 3</label>
+							<div class="controls">
+								<input id="avaliacaoP3" name="avaliacaoP3" type="text"
+									placeholder="" class="form-control" style="width: 250px;" />
+							</div>
 						</div>
-					</div>
-					<div class="control-group"
-						style="margin-top: 10px; margin: center;">
-						<label class="control-label">Faltas</label>
-						<div class="controls">
-							<input id="quantidade_faltas" name="quantidade_faltas"
-								type="text" placeholder="" class="form-control"
-								style="width: 250px;" />
+						<div class="control-group"
+							style="margin-top: 10px; margin: center;">
+							<label class="control-label">Faltas</label>
+							<div class="controls">
+								<input id="quantidade_faltas" name="quantidade_faltas"
+									type="text" placeholder="" class="form-control"
+									style="width: 250px;" />
+							</div>
 						</div>
-					</div>
-					<div class="control-group" style="text-align: center">
-						<div class="controls" style="margin-top: 10px">
-							<button class="btn btn-primary" type="submit">Salvar</button>
+						<div class="control-group" style="text-align: center">
+							<div class="controls" style="margin-top: 10px">
+								<button class="btn btn-primary" type="submit">Salvar</button>
+							</div>
 						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
+	</div>
 </body>
 </html>
