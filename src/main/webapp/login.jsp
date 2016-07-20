@@ -14,19 +14,10 @@
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header page-scroll">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i
-					class="fa fa-bars"></i>
-			</button>
-			<a class="navbar-brand" href="visualizar_nota.jsp">AGENDA
-				ACADÊMICA</a>
+			<a class="navbar-brand" href="login.jsp">AGENDA ACADÊMICA</a>
 		</div>
 		<div class="collapse navbar-collapse"
-			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-left">
-			</ul>
-		</div>
+			id="bs-example-navbar-collapse-1"></div>
 	</div>
 	</nav>
 	<div class="formulario" style="margin-top: 150px">
@@ -54,7 +45,7 @@
 					style="width: 120px; margin-left: auto; margin-right: auto;"
 						class="btn
 						btn-primary" ; type="submit">Acessar</a> <a
-						href="visualizar_nota.jsp"
+						href="cadastro_usuario.jsp"
 						;
 						style="width: 120px; margin-left: auto; margin-right: auto;"
 						class="btn
