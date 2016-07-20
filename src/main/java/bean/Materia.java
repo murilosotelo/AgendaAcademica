@@ -14,25 +14,25 @@ public class Materia {
 	@GeneratedValue
 	@Column(name = "id")
 	private Integer id;
-	
+
 	@Column(name = "nome")
 	private String nome;
-	
+
 	@Column(name = "caraga_horaria")
 	private Integer cargaHoraria;
-	
+
 	@Column(name = "quantidade_faltas")
 	private Integer faltas;
 
-	@Column(name= "avaliacao_1")
-	private Integer avaliacaoP1;
-	
-	@Column(name= "avaliacao_2")
-	private Integer avaliacaoP2;
-	
-	@Column(name= "avaliacao_3")
-	private Integer avalicaoP3;
-	
+	@Column(name = "avaliacao_1")
+	private Double avaliacaoP1;
+
+	@Column(name = "avaliacao_2")
+	private Double avaliacaoP2;
+
+	@Column(name = "avaliacao_3")
+	private Double avalicaoP3;
+
 	public Integer getId() {
 		return id;
 	}
@@ -48,6 +48,7 @@ public class Materia {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public Integer getCargaHoraria() {
 		return cargaHoraria;
 	}
@@ -64,30 +65,28 @@ public class Materia {
 		this.faltas = faltas;
 	}
 
-	public Integer getAvaliacaoP1() {
+	public Double getAvaliacaoP1() {
 		return avaliacaoP1;
 	}
 
-	public void setAvaliacaoP1(Integer avaliacaoP1) {
+	public void setAvaliacaoP1(Double avaliacaoP1) {
 		this.avaliacaoP1 = avaliacaoP1;
 	}
 
-	public Integer getAvaliacaoP2() {
+	public Double getAvaliacaoP2() {
 		return avaliacaoP2;
 	}
 
-	public void setAvaliacaoP2(Integer avaliacaoP2) {
+	public void setAvaliacaoP2(Double avaliacaoP2) {
 		this.avaliacaoP2 = avaliacaoP2;
 	}
 
-	public Integer getAvalicaoP3() {
+	public Double getAvalicaoP3() {
 		return avalicaoP3;
 	}
 
-	public void setAvalicaoP3(Integer avalicaoP3) {
+	public void setAvalicaoP3(Double avalicaoP3) {
 		this.avalicaoP3 = avalicaoP3;
 	}
-	
 
-	
 }
