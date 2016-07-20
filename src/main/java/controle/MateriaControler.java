@@ -15,4 +15,7 @@ public class MateriaControler {
 		return MateriaDao.listar();
 	}
 
+	public void delete(Materia materia){
+		MateriaDao.delete(materia);
+	}
 }
