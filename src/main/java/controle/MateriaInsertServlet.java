@@ -35,8 +35,8 @@ public class MateriaInsertServlet extends HttpServlet {
 		materia.setNome(nomeMateria);
 		materia.setCargaHoraria(cargaHoraria);
 		materia.setAvaliacaoP1(avaliacaoP1);
-		materia.setAvaliacaoP1(avaliacaoP2);
-		materia.setAvaliacaoP1(avaliacaoP3);
+		materia.setAvaliacaoP2(avaliacaoP2);
+		materia.setAvalicaoP3(avaliacaoP3);
 		materia.setFaltas(faltas);
 
 		MateriaControler mc = new MateriaControler();
