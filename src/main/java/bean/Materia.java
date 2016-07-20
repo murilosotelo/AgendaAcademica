@@ -31,7 +31,7 @@ public class Materia {
 	private Double avaliacaoP2;
 
 	@Column(name = "avaliacao_3")
-	private Double avalicaoP3;
+	private Double avaliacaoP3;
 
 	public Integer getId() {
 		return id;
@@ -81,12 +81,12 @@ public class Materia {
 		this.avaliacaoP2 = avaliacaoP2;
 	}
 
-	public Double getAvalicaoP3() {
-		return avalicaoP3;
+	public Double getAvaliacaoP3() {
+		return avaliacaoP3;
 	}
 
-	public void setAvalicaoP3(Double avalicaoP3) {
-		this.avalicaoP3 = avalicaoP3;
+	public void setAvaliacaoP3(Double avaliacaoP3) {
+		this.avaliacaoP3 = avaliacaoP3;
 	}
 
 }
