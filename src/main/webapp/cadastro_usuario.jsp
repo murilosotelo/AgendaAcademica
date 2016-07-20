@@ -4,15 +4,35 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="css/min.css" rel="stylesheet">
 <title>Agenda Acadêmica</title>
 
 </head>
-<header>
-<div style="height: 110px; width: 100%; background-color: #009688;"></div>
-</header>
 <body>
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header page-scroll">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span> Menu <i
+					class="fa fa-bars"></i>
+			</button>
+			<a class="navbar-brand" href="visualizar_nota.jsp">AGENDA ACADÊMICA</a>
+		</div>
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="cadastro_disciplina.jsp">Cadastrar Disciplina</a></li>
+				<li><a href="editar_disciplina.jsp">Editar Disciplina</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="configuracoes.jsp">Configurações</a></li>
+				<li><a href="login.jsp">Sair</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
 	<div class="formulario" style="margin-top: 100px">
 		<h1 style="text-align: center;">Cadastro de Usuário</h1>
 		<form class="form-horizontal" action="/AgendaAcademica/AlunoInsertServlet" method="post">
