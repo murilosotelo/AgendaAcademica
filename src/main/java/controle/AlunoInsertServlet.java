@@ -34,7 +34,7 @@ public class AlunoInsertServlet extends HttpServlet {
 		tc.insert(aluno);
 		
 
-		//response.sendRedirect("MateriaSelectServlet");
+		response.sendRedirect("MateriaSelectServlet");
 	}
 
 }

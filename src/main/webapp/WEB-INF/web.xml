@@ -21,6 +21,13 @@
 		<servlet-name>MateriaSelectServlet</servlet-name>
 		<servlet-class>controle.MateriaSelectServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MateriaDeleteServlet</display-name>
+		<servlet-name>MateriaDeleteServlet</servlet-name>
+		<servlet-class>controle.MateriaDeleteServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>AlunoInsertServlet</servlet-name>
 		<url-pattern>/AlunoInsertServlet</url-pattern>
@@ -32,6 +39,10 @@
 	<servlet-mapping>
 		<servlet-name>MateriaSelectServlet</servlet-name>
 		<url-pattern>/MateriaSelectServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MateriaDeleteServlet</servlet-name>
+		<url-pattern>/MateriaDeleteServlet</url-pattern>
 	</servlet-mapping>
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
