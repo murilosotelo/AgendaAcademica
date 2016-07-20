@@ -13,11 +13,6 @@
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header page-scroll">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i
-					class="fa fa-bars"></i>
-			</button>
 			<a class="navbar-brand" href="visualizar_nota.jsp">AGENDA
 				ACADÊMICA</a>
 		</div>
@@ -35,45 +30,29 @@
 	</div>
 	</nav>
 
-	<div class="container" style="margin-top: 75px;">
+	<div class="container" style="margin-top: 150px;">
 		<form action="MateriaDeleteServlet" method="post">
 			<table border="1" class="table table-bordered">
 				<%
 					List<Materia> materias = (List) request.getAttribute("materias");
-					out.print("<tr>" + "<td>Nome</td>" + "<td>Carga Horaria</td>"
-							+ "<td>Avaliação 1</td>" + "<td>Avaliação 2</td>"
-							+ "<td>Avaliação 3</td>" + "<td>Faltas</td>"
-							+ "<td>Marcar</td>" + "</tr>");
+					out.print("<tr>" + "<td>Nome</td>" + "<td>Carga Horaria</td>" + "<td>Avaliação 1</td>"
+							+ "<td>Avaliação 2</td>" + "<td>Avaliação 3</td>" + "<td>Faltas</td>" + "<td>Marcar</td>"
+							+ "</tr>");
 					if (materias != null) {
 						for (Materia materia : materias) {
-							out.print("<tr>"
-									+ "<td>"
-									+ materia.getNome()
-									+ "</td>"
-									+ "<td>"
-									+ materia.getCargaHoraria()
-									+ "</td>"
-									+ "<td>"
-									+ materia.getAvaliacaoP1()
-									+ "</td>"
-									+ "<td>"
-									+ materia.getAvaliacaoP2()
-									+ "</td>"
-									+ "<td>"
-									+ materia.getAvaliacaoP3()
-									+ "</td>"
-									+ "<td>"
-									+ materia.getFaltas()
+							out.print("<tr>" + "<td>" + materia.getNome() + "</td>" + "<td>" + materia.getCargaHoraria()
+									+ "</td>" + "<td>" + materia.getAvaliacaoP1() + "</td>" + "<td>" + materia.getAvaliacaoP2()
+									+ "</td>" + "<td>" + materia.getAvaliacaoP3() + "</td>" + "<td>" + materia.getFaltas()
 									+ "</td>"
 
-									+ "<td><input type='checkbox' name='marcado' value='"
-									+ materia.getId() + "'></td>" + "</tr>");
+									+ "<td><input type='checkbox' name='marcado' value='" + materia.getId() + "'></td>"
+									+ "</tr>");
 						}
 					}
 				%>
 			</table>
 			<input type="submit" value="Deletar" class="btn">
-</form>
-</div>
+		</form>
+	</div>
 </body>
 </html>
