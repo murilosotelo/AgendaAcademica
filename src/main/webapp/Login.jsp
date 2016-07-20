@@ -29,10 +29,10 @@
   </div>
   <div class="control-group">
     <div class="controls" style="margin-top: 10px">
-      <a href="Vizualizar Nota.html"  class="btn btn-primary " type="submit">Acessar</a>
+      <a href="visualizar_nota.html"  class="btn btn-primary " type="submit">Acessar</a>
     </div>
   </div>
-  <label><a href="Cadastro de usuario.html">Cadastro</a></label>
+  <label><a href="cadastro_usuario.html">Cadastro</a></label>
 </form>
 </div>	
 	
