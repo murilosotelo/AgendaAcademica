@@ -4,9 +4,9 @@
 <html>
 <head>
 	<meta charset="UTF-8"> 
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
 	
-	<title>Cadastro de Aluno</title>
+	<title>Login</title>
 	
 </head>
 <header>
@@ -15,7 +15,7 @@
 <body>
 
 <div class="formulario" style="margin-top: 100px">
-<h1 style="bold; text-align: center;">Login</h1>
+<h1 style="bold; text-align: center;">AGENDA ACADEMICA</h1>
 <form class="form-horizontal" style="text-align: center;">
   <div class="control-group">
     <div class="controls">
