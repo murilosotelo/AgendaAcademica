@@ -28,6 +28,13 @@
 		<servlet-name>MateriaDeleteServlet</servlet-name>
 		<servlet-class>controle.MateriaDeleteServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>TelaLoginServlet</display-name>
+		<servlet-name>TelaLoginServlet</servlet-name>
+		<servlet-class>controle.TelaLoginServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>AlunoInsertServlet</servlet-name>
 		<url-pattern>/AlunoInsertServlet</url-pattern>
@@ -43,6 +50,10 @@
 	<servlet-mapping>
 		<servlet-name>MateriaDeleteServlet</servlet-name>
 		<url-pattern>/MateriaDeleteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TelaLoginServlet</servlet-name>
+		<url-pattern>/TelaLoginServlet</url-pattern>
 	</servlet-mapping>
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>

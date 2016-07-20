@@ -34,7 +34,7 @@ public class AlunoInsertServlet extends HttpServlet {
 		ac.insert(aluno);
 		
 
-		response.sendRedirect("MateriaSelectServlet");
+		response.sendRedirect("TelaLoginServlet");
 	}
 
 }
