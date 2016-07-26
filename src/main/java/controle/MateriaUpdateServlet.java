@@ -17,9 +17,10 @@ public class MateriaUpdateServlet extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		Integer id = Integer.parseInt(request.getParameter("id"));
 		String nomeMateria = request.getParameter("nome_materia");
 		Integer cargaHoraria = Integer.parseInt(request.getParameter("carga_horaria"));
 		Double avaliacaoP1 = Double.parseDouble(request.getParameter("avaliacaoP1"));
@@ -28,6 +29,7 @@ public class MateriaUpdateServlet extends HttpServlet {
 		Integer faltas = Integer.parseInt(request.getParameter("quantidade_faltas"));
 
 		Materia materia = new Materia();
+		materia.setId(id);
 		materia.setNome(nomeMateria);
 		materia.setCargaHoraria(cargaHoraria);
 		materia.setAvaliacaoP1(avaliacaoP1);

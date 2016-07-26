@@ -22,4 +22,8 @@ public class MateriaControler {
 	public void update(Materia materia) {
 		MateriaDao.update(materia);
 	}
+	
+	public Materia findOne(Integer id){
+		return MateriaDao.getById(id);
+	}
 }

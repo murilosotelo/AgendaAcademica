@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	isELIgnored="false" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <%@ page import="java.util.List"%>
 <%@ page import="bean.Materia"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -31,28 +32,38 @@
 	</nav>
 
 	<div class="container" style="margin-top: 150px;">
-		<form action="MateriaDeleteServlet" method="post">
-			<table border="1" class="table table-bordered">
-				<%
-					List<Materia> materias = (List) request.getAttribute("materias");
-					out.print("<tr>" + "<td>Nome</td>" + "<td>Carga Horaria</td>" + "<td>Avaliação 1</td>"
-							+ "<td>Avaliação 2</td>" + "<td>Avaliação 3</td>" + "<td>Faltas</td>" + "<td>Marcar</td>"
-							+ "</tr>");
-					if (materias != null) {
-						for (Materia materia : materias) {
-							out.print("<tr>" + "<td>" + materia.getNome() + "</td>" + "<td>" + materia.getCargaHoraria()
-									+ "</td>" + "<td>" + materia.getAvaliacaoP1() + "</td>" + "<td>" + materia.getAvaliacaoP2()
-									+ "</td>" + "<td>" + materia.getAvaliacaoP3() + "</td>" + "<td>" + materia.getFaltas()
-									+ "</td>"
-
-									+ "<td><input type='checkbox' name='marcado' value='" + materia.getId() + "'></td>"
-									+ "</tr>");
-						}
-					}
-				%>
-			</table>
-			<input type="submit" value="Deletar" class="btn">
-		</form>
+		<table border="1" class="table table-bordered">
+			<tr>
+				<td>Nome</td>
+				<td>Carga Horaria</td>
+				<td>Avaliação 1</td>
+				<td>Avaliação 2</td>
+				<td>Avaliação 3</td>
+				<td>Faltas</td>
+				<td>Editar</td>
+				<td>Excluir</td>
+			</tr>
+			<c:forEach items="${materias}" var="materia">
+				<tr>
+					<td>${materia.nome}</td>
+					<td>${materia.cargaHoraria}</td>
+					<td>${materia.avaliacaoP1}</td>
+					<td>${materia.avaliacaoP2}</td>
+					<td>${materia.avaliacaoP3}</td>
+					<td>${materia.faltas}</td>
+					<td>
+						<button type="submit" class="btn"
+							onclick="location.href='MateriaGetIdServlet?id=${materia.id}'">Editar</button>
+					</td>
+					<td>
+						<button type="submit" class="btn"
+							onclick="location.href='MateriaDeleteServlet?id=${materia.id}'">Remover</button>
+					</td>				
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 </body>
 </html>
+
+

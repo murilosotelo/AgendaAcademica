@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
 	<servlet>
 		<display-name>AlunoInsertServlet</display-name>
 		<servlet-name>AlunoInsertServlet</servlet-name>
-		<description>
-		</description>
 		<servlet-class>controle.AlunoInsertServlet</servlet-class>
 	</servlet>
 	<servlet>
@@ -35,6 +36,20 @@
 		<servlet-name>TelaLoginServlet</servlet-name>
 		<servlet-class>controle.TelaLoginServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MateriaGetIdServlet</display-name>
+		<servlet-name>MateriaGetIdServlet</servlet-name>
+		<servlet-class>controle.MateriaGetIdServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MateriaUpdateServlet</display-name>
+		<servlet-name>MateriaUpdateServlet</servlet-name>
+		<servlet-class>controle.MateriaUpdateServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>AlunoInsertServlet</servlet-name>
 		<url-pattern>/AlunoInsertServlet</url-pattern>
@@ -55,7 +70,15 @@
 		<servlet-name>TelaLoginServlet</servlet-name>
 		<url-pattern>/TelaLoginServlet</url-pattern>
 	</servlet-mapping>
-  <welcome-file-list>
-    <welcome-file>login.jsp</welcome-file>
-  </welcome-file-list>
+	<servlet-mapping>
+		<servlet-name>MateriaGetIdServlet</servlet-name>
+		<url-pattern>/MateriaGetIdServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MateriaUpdateServlet</servlet-name>
+		<url-pattern>/MateriaUpdateServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
 </web-app>

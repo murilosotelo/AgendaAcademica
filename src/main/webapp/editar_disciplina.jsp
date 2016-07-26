@@ -5,7 +5,7 @@
 <head>
 <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="css/min.css" rel="stylesheet">
-<title>Insert title here</title>
+<title>Editar Disciplina</title>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -44,11 +44,12 @@
 					<form class="form-horizontal"
 						action="/AgendaAcademica/MateriaUpdateServlet" method="post">
 						<div class="control-group" style="margin: center">
+							<input type="hidden" name="id" value="${materia.id}" />
 							<label style="white-space: nowrap;" class="control-label"
 								display="inline-block">Nome da Disciplina</label>
 							<div class="controls">
 								<input id="nome_materia" name="nome_materia" type="text"
-									placeholder="Digite o nome da disciplina" class="form-control"
+									value="${materia.nome}" class="form-control"
 									style="width: 250px;" />
 							</div>
 						</div>
@@ -58,8 +59,8 @@
 								Horária</label>
 							<div class="controls">
 								<input id="carga_horaria" name="carga_horaria" type="text"
-									placeholder="Digite a carga horária da disciplina"
-									class="form-control" style="width: 250px;" />
+									value="${materia.cargaHoraria}" class="form-control"
+									style="width: 250px;" />
 							</div>
 						</div>
 						<div class="control-group"
@@ -68,7 +69,8 @@
 								Avaliação 1</label>
 							<div class="controls">
 								<input id="avaliacaoP1" name="avaliacaoP1" type="text"
-									class="form-control" style="width: 250px;" />
+									value="${materia.avaliacaoP1}" class="form-control"
+									style="width: 250px;" />
 							</div>
 						</div>
 						<div class="control-group"
@@ -77,7 +79,8 @@
 								Avaliação 2</label>
 							<div class="controls">
 								<input id="avaliacaoP2" name="avaliacaoP2" type="text"
-									placeholder="" class="form-control" style="width: 250px;" />
+									value="${materia.avaliacaoP2}" class="form-control"
+									style="width: 250px;" />
 							</div>
 						</div>
 						<div class="control-group"
@@ -86,7 +89,8 @@
 								Avaliação 3</label>
 							<div class="controls">
 								<input id="avaliacaoP3" name="avaliacaoP3" type="text"
-									placeholder="" class="form-control" style="width: 250px;" />
+									value="${materia.avaliacaoP3}" class="form-control"
+									style="width: 250px;" />
 							</div>
 						</div>
 						<div class="control-group"
@@ -94,7 +98,7 @@
 							<label style="white-space: nowrap;" class="control-label">Faltas</label>
 							<div class="controls">
 								<input id="quantidade_faltas" name="quantidade_faltas"
-									type="text" placeholder="" class="form-control"
+									value="${materia.faltas}" type="text" class="form-control"
 									style="width: 250px;" />
 							</div>
 						</div>
