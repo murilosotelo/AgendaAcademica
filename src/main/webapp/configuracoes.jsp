@@ -23,7 +23,6 @@ label {
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-left">
 				<li><a href="cadastro_disciplina.jsp">Cadastrar Disciplina</a></li>
-				<li><a href="editar_disciplina.jsp">Editar Disciplina</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="configuracoes.jsp">Configurações</a></li>

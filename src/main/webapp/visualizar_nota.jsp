@@ -8,7 +8,7 @@
 <head>
 <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="css/min.css" rel="stylesheet">
-<title>Insert title here</title>
+<title>Agenda Acadêmica</title>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -21,7 +21,6 @@
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-left">
 				<li><a href="cadastro_disciplina.jsp">Cadastrar Disciplina</a></li>
-				<li><a href="editar_disciplina.jsp">Editar Disciplina</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="configuracoes.jsp">Configurações</a></li>
