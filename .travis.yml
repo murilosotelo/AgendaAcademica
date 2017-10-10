@@ -1,3 +1,12 @@
 language: java
 jdk:
   - oraclejdk8
+addons:
+  sonarcloud:
+    organization: "r0kux"
+    token:
+      secure: "bb0dbde0b7715d91d10d2a41df1349b4b7641caf"
+
+ 
+script:
+  - sonar-scanner
